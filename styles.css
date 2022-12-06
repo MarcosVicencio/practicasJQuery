@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid .container{
+    width: auto;
+    float: right;
+}
+
+.container .input-group{
+    float: right;
+}
