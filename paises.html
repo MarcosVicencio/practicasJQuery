@@ -8,6 +8,7 @@
     <title>Lista de Países</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="pasises.css">
 </head>
 
 <body>
@@ -25,51 +26,69 @@
     </div>
     <div id="contenedor-paises" class="container-fluid d-flex flex-wrap justify-content-around p-2 gap-2">
         <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Albania.svg" class="card-img-top" alt="Bandera de Alemania">
+            <img src="src/countryImages/Bandera de Albania.svg" class="card-img-top" alt="Bandera de Andorra">
             <div class="card-body">
                 <h5 class="card-title">País de Albania</h5>
                 <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
                     montañosas y playas en el mar del Norte.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Idioma
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Inglés</strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Continente
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><Strong>Europa</Strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Localización
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Norte de...</strong></div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="src/countryImages/Bandera de Albania.svg" class="card-img-top" alt="Bandera de Alemania">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">País de Albania</h5>
+                <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
+                    montañosas y playas en el mar del Norte.</p>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Más Información
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-1" id="exampleModalLabel">Albania</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6"><img src="src/countryImages/Bandera de Albania.svg"
+                                        class="img-fluid" alt="..."></div> <br>
+                                <div class="col-md-6 ms-auto">
+                                    <p class="text-start"> <strong>Nombre oficial: </strong>República de Albania
+                                        (Republika e Shqipërisë)<br>
+                                        <strong>Superficie: </strong>28.748 km2<br><strong>Situación y Límites:
+                                        </strong>La República de Albania está situada
+                                        al sureste de Europa, en los Balcanes occidentales. Países limítrofes: al norte,
+                                        Montenegro; al noreste, el territorio de Kosovo; al este, República de Macedonia
+                                        del Norte, antes la Antigua república Yugoslava de Macedonia (ARYM) y al sur y
+                                        sureste, Grecia. Albania tiene al oeste costa al Mar Adriático y al suroeste al
+                                        Mar Jónico. Fronteras: 1094 kms (terrestre, 657 kms; marítima, 316 kms; fluvial,
+                                        48 kms; y lacustre, 73 kms).<br><strong>Población: </strong>2.829.741 habitantes
+                                        residentes en el
+                                        territorio de la República (datos del INSTAT a 1 de enero de 2021). La población
+                                        nacional emigrada es numerosa, estimándose que puede llegar a doblar la
+                                        población nacional residente.<br><strong>Capital: </strong>Tirana (Prefectura de
+                                        Tirana: 905.280
+                                        habitantes).<br><strong>Idioma: </strong>el albanés, con
+                                        dos dialectos básicos, guego y tosco, al norte y sur del río Skumbin
+                                        respectivamente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <button type="button" class="btn btn-lg text-light btn-success m-auto mb-1" data-toggle="modal-dialog"
+                data-target="#myModal">Más Información</button> -->
         </div>
         <div class="card" style="width: 18rem;">
             <img src="src/countryImages/Bandera de Alemania.svg" class="card-img-top" alt="Bandera de Alemania">
@@ -78,309 +97,54 @@
                 <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
                     montañosas y playas en el mar del Norte.</p>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Idioma
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Inglés</strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Continente
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><Strong>Europa</Strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Localización
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Norte de...</strong></div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Más Información
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-1" id="exampleModalLabel">Alemania</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6"><img src="src/countryImages/Bandera de Alemania.svg"
+                                        class="img-fluid" alt="..."></div> <br>
+                                <div class="col-md-6 ms-auto">
+                                    <p class="text-start"> <strong>Nombre oficial: </strong>República Federal de
+                                        Alemania<br>
+                                        <strong>Superficie: </strong>357.020,70 km2. La mayor distancia de Norte a Sur
+                                        es de 876 km en línea recta, y de Oeste a Este de 640 km.<br><strong>Situación y
+                                            Límites:
+                                        </strong>La República Federal de Alemania está situada en el Centro de Europa.
+                                        El país tiene fronteras con Francia, Suiza y Austria por el sur; Bélgica,
+                                        Holanda y Luxemburgo por el oeste; Dinamarca por el Norte y Polonia y la
+                                        República Checa por el este.<br><strong>Población: </strong>83,2 millones
+                                        hab.<br><strong>Capital: </strong>Berlín (3.775.480 hab.).<br><strong>Idioma:
+                                        </strong>Alemán
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Andorra.svg" class="card-img-top" alt="Bandera de Alemania">
+            <img src="src/countryImages/Bandera de Andorra.svg" class="card-img-top" alt="Bandera de Andorra">
             <div class="card-body">
                 <h5 class="card-title">País de Andorra</h5>
                 <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
                     montañosas y playas en el mar del Norte.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Idioma
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Inglés</strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Continente
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><Strong>Europa</Strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Localización
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Norte de...</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Austria.svg" class="card-img-top" alt="Bandera de Alemania">
-            <div class="card-body">
-                <h5 class="card-title">País de Austria</h5>
-                <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
-                    montañosas y playas en el mar del Norte.</p>
-            </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Idioma
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Inglés</strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Continente
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><Strong>Europa</Strong></div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Localización
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><strong>Norte de...</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Belgica.svg" class="card-img-top" alt="Bandera de Alemania">
-            <div class="card-body">
-                <h5 class="card-title">País de Belgica</h5>
-                <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
-                    montañosas y playas en el mar del Norte.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Bielorrusia.svg" class="card-img-top" alt="Bandera de Alemania">
-            <div class="card-body">
-                <h5 class="card-title">País de Bielorrusia</h5>
-                <p class="card-text">Alemania es un país de Europa occidental con un paisaje de bosques, ríos, cadenas
-                    montañosas y playas en el mar del Norte.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de España.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de España</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Bosnia y Herzegovina.svg" class="card-img-top"
-                alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Bosnia Herzegovina</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Bulgaria.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Bulgaria</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Croacia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Croacia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Dinamarca.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Dinamarca</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Eslovaquia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Eslovaquia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Eslovenia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Eslovenia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Estonia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Estonia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Finlandia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Finlandia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Francia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Francia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="src/countryImages/Bandera de Grecia.svg" class="card-img-top" alt="Bandera de España">
-            <div class="card-body">
-                <h5 class="card-title">País de Grecia</h5>
-                <p class="card-text">España, país de la península ibérica de Europa, incluye 17 regiones autónomas con
-                    diversas características geográficas y culturales.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Continente</li>
-                <li class="list-group-item">Localización</li>
-                <li class="list-group-item">Idioma</li>
-            </ul>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
